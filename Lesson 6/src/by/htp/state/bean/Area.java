@@ -1,45 +1,45 @@
 package by.htp.state.bean;
 
 public class Area {
-	
+
 	private String name;
-	private String main_city;
+	private String maincity;
 	private int square;
-	
-	public Area(String name, String main_city, int square) {
+
+	public Area(String name, String maincity, int square) {
 
 		this.name = name;
-		this.main_city = main_city;
+		this.maincity = maincity;
 		this.square = square;
 	}
-	
-	public String setName(String name) {
-	    this.name = name;
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setMaincity(String maincity) {
+		this.maincity = maincity;
+	}
+
+	public void setSquare(int square) {
+		this.square = square;
+		// return square;
+	}
+
+	public String getName() {
 		return name;
 	}
-	
-	public String setMain_city(String main_city) {
-	    this.main_city = main_city;
-		return main_city;
+
+	public String getMaincity() {
+		return maincity;
 	}
-	
-	public Integer setSquare(int square) {
-			this.square = square;
-			return square;
-		}
-	
-	public String getName() {
-			return name;
-		}
-	
-	public String getMain_city() {
-		return main_city;
+
+	public int getSquare() {
+		return square;
 	}
-	
-	public Integer getSquare() {
-			return square;
-		}
-	public static void printArea(Area area) {
-		System.out.println("Area: " + area.name + ". Main city is " + area.main_city + ". Square is " + area.square + " m2.");
+
+	public void printArea() {
+		System.out.println(
+				"Area: " + this.name + ". Main city is " + this.maincity + ". Square is " + this.square + " m2.");
 	}
 }
